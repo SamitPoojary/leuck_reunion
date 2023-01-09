@@ -73,3 +73,8 @@ Something like this, maybe? But obviously on a more professional scale. All opti
 > Ideally, the design should be user-friendly, prompt the user with an input, and then deliver the movie recommendations with fluidity. For the frontend portion, however, I understand how important it is for the user interface to be well crafted and look credible. 
 
 
+As for the favoriting system, which would allow users to search for a movie and "save" it to a favorite movie list, here is a template of the code we would use to fetch data, and customize the UI:
+
+<img src="{{site.baseurl}}/images/favoritemovie.png">
+
+> This code uses the TMDb API to search for movies with a given title and allows the user to add them to a list of favorite movies. Each movie is displayed in a separate div element with a poster image, title, and overview.
