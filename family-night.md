@@ -1,38 +1,9 @@
-## Family Night
-> Each evening family will meet.  Family nights are intended to build the Leuck family legacy.
+## The Idea
 
-### Leuck Greet
-> Movie, Games, Popcorn.  As we slumber in from our travels, how about an unwinding night?
-- Start with Movie
-- Transition to games
-- Mom and Pop welcome, stories about there first family reunions.  Recap of some of the great Leuck get togethers. 
+Our team's idea is to develop a web application that allows users to input their favorite movies and receive recommendations for similar movies. The application, ideally, should have a form (UI) that allows the user to enter the title of a movie they enjoyed greatly, and a button to submit the form. When the user submits the form, the application should use an API to retreive data about the user's movie, including elements such as its genre, length, producer, etc. The application should then display a list of similar movies to the user, along with their titles and brief descriptions about the film., and maybe even the genre. 
 
-Trivia, which one is Frank and Judith?  who are the others?
-<div class="row"> <!--- make a new row -->
-  <!-- each column is one-third of width -->
-  <div class="column">
-    <img src="/images/sherwood_glena.jpg" alt="Field" style="width:100%">
-  </div>
-   <div class="column">
-    <img src="/images/frank_judith.jpg" alt="Bocce" style="width:100%">
-  </div>
-   <div class="column">
-    <img src="/images/norville_erma.jpg" alt="Pool" style="width:100%">
-  </div>
-</div>
+An example of a specific databse from which we can use as an API would be one known as The Movie Database. This API contains the information to millions of not just movies, but TV shows as well. 
 
-### Tuesday Family Night
-> Family History night.  What better way to unite in reunion spirit then talk about us, explore our similarities and get excited about our differences.  A night of stories on how we all came together as Leuck's, plus some games on our similarities and differences.
-- Learn the "Leuck Song"
-- Kick off with some games to look at our similarities and differences.
-- Originals, plan 5 minute story and introduction on you and your clan.   Props and acting encouraged with your stories.  Stick to the 5 minute time line.
-- Frank and Judith love story
-- Encores and requests
-- Family prayer, 'Leuck style'
+The link below directs you to The Movie Database API home page, a database that contains the information and specificities to millions of movies worldwide. Our group plans on utilizing artificial intelligence in order to locate the similarities between the user's favorite movie and other movies that could potentially suit their interests as well. This database will better allow movie-lovers and movie critics to judge a movie based off of similar variants, overall enhancing the movie-watching experience and maybe even allow for better movies to be produced in the future. 
 
-### Wednesday Family Night
-> Sports Trivia.  John will give trivia questions to everyone.
-
-### Thursday Family Night
-
-### Friday Family Night
+Browse [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction) to learn about how the API works, and what the database entails. 

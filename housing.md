@@ -1,52 +1,44 @@
-## Housing Overview
-> Sleeps 48 people. Verify your housing assignment at the reunion with Jeremiah and Melissa in case there are last minute changes.
- 
-> Preview [Homes](https://www.coramranch.com/vacation-home)
-- River House
-- Dogwood House
-- Alpine and Birch House
-- Cedar House
-- Rec Room
+# Scrum Master
 
-## Cooking
-> On site there are cooking facilities in each house. The Alpine ranch kitchens will be for large group meals and has appliances and utensils. There is an outdoor barbecue!
+You can find our open issues right [here](https://github.com/SamitPoojary/leuck_reunion/issues).
+
+## Scrum Board:
+
+<table>
+  <tr>
+    <th>To-do</th>
+    <th>Work in Progress</th>
+    <th>Completed</th>
+  </tr>
+  <tr>
+    <td>Finalize elements of our project</td>
+    <td>Basic layout of site</td>
+    <td>Agile manifesto</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Customize pages using scss</td>
+    <td>Creating issues with checklist to complete per person</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>Ideation of "rough" project</td>
+  </tr>
+</table>
+
+## Brainstorming Features
+
+### Samit
+> I would like to incorporate a feature that provides the user with a link to the trailer of the movie which they are recommended to watch. This way, users will be given quick efficient access to get a preview of the movie before deciding whether they would like to watch it or not. This is mostly backend along with frontend, and as Scrum Master, I will do my best to help out as much as I can. 
+
+### Martin
+> As backend developer, I would like to create a feature that allows users to save their favorite movies to a watchlist and view the list later. This is a job largely for the frontend and backend, so I am up to the task. 
+
+### Derek
+> I am the frontend developer, and I want to add a feature that lets users rate the movies they have seen. This way, the recommendation for the movie already entails previous ratings for future movie-lovers to ponder. 
+
+### Ethan
+> Since Martin wants to add a feature for users to save their favorite movies, I want to add a feature that suggests similar movies based off the ones in the user's favorite list. This way, the input part can be skipped. 
 
 
-## Housing Assignment
-
-| Family | Attending | Assignment | Count | Children | Arrive | Depart
-| --- | --- | --- | --- | --- | --- | --- |
-| Frank, Judith | Yes | Dogwood Primary | 2 | None | Mon | Sat |
-| | | | | |
-| Johnner, Lora | Yes | ? | 3 | Shay (14) | Mon | Sat |
-| Trent, Yuri | Yes | ? | 5 | Amelia (8), Cruz (6), Gavi (1) | Mon | Sat |
-| Corey | Yes | ? | 1 | - | Mon | Fri |
-| Tiernan | Yes | ? | 1 | - | Mon | Sat |
-| Claire | Yes | ? | 1 | - | Mon | Sat |
-| | | | | |
-|Lisa-Anne, Chris | Yes | ? | 2 | None | Mon | Sat |
-|Brianna, Forest | Yes | ? | 6 | Sayla (6), Tundra (4), Alora (2), Keelynn (1) | Mon | Sat |
-|Kira, Spencer | Yes | ? | 5 | Georgianna (6), James (5), Arabella (2), Hunter (NB) | Mon | Sat |
-|Ethan, Layne | Yes | ? | 6 | William (6), Lily (4), Adeline (2), Eleanor (1) | Mon | Sat |
-| Jarom | Yes | ? | 1 | None | Mon | Sat |
-| Braden | Yes | ? | 1 | None | Mon | Sat |
-| | | | | |
-| Mathew | ? | ? | 1 | None | Unk | Unk |
-| | | | | |
-| Sherri, Drumond | Yes | ? | 2 | None | Mon | Sat |
-| Taylor | Yes | ? | 1 | None | Unk | Unk |
-| Jake | Yes | ? | 1 | None | Unk | Unk |
-| | | | | |
-| Angela, Tye | Yes | ? | 2 | None | Mon | Sat |
-| Bryce | ? | ? | 1 | None | Unk | Unk |
-| Aspen, Brandon | ? | ? | 2 | None | Unk | Unk |
-| Calem | ? | ? | 1 | None | Unk | Unk |
-| | | | | |
-| Jared, Janice | Yes | ? | 4 | Kelle (15), Naya (13) | Mon | Sat |
-| | | | | |
-| John, Melanie | Yes | ? | 4 | Connor (17), Sophia (14) | Mon | Sat |
-| Isaiah | ? | ? | 1 | None | Unk | Unk |
-| | | | | |
-| Jeremiah, Melissa | Yes | ? | 3 | Liam (11) | Mon | Sat |
-| Annalyce | ? | ? | 1 | None | Unk | Unk |
-| Peyton | Yes | ? | 1 | None | Unk | Unk |

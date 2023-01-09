@@ -1,49 +1,18 @@
-## Planned Meals
-> The Alpine lodge extra-large kitchen seats 44 people.  The kitchens are perfect for large group meals and all come equipped with appropriate appliances and utensils. There is an outdoor barbecue!  There is a fridge and individual kitchens in the homes.   So there is a place to store snacks, make sure you stock up for the little ones.
+# BackEnd Dev
+<img src="/images/roughui.png">
 
-1. **Breakfast** will be available at 8am each morning. Families will be able to serve themselves and we ask that you clean up after yourselves as well. Breakfast will close at 9:30 to allow time for clean up before activities begin.
-2.  **Morning Huddle** will be at 9:45am in the dinning hall.  This is a chance to know what the activities are and where you need to be if you are participating.
-3.  **Lunch** will be available at 12pm each day.  Supplies will be available to make your own lunch.  You can dine in the hall or take it with you depnding on planned activities.  As always clean up after yourself and your family.  
-4.  **Dinner** will be available at 6pm each evening. It is strongly encouraged to eat in the hall all together so that you do not miss the 7pm Family Night directly afterwards.
-- **NOTE** - The menu for the day will be posted in the dinning hall each morning. Snacks will be left out after lunch and if any remain will be put away when dinner is being prepared.
-    
-### Monday Dinner - Head Chef Lisa (6 - 7pm)
+Our goal here is to develop a usable application that can effectively take in a user's favorite movie and generate similar movies. In addition to that, the application should ideally be able to store the user's most favorite movies (as operated by user). When evaluating what movies are the most suitable for the user, we will be taking into account the genre, main cast, and potentially even the producer. 
+
+> As the backend developer, my job is to successfully implement the "The Movie Database" API so that the millions of movies from around the world are stored in a directory and can be called upon whenever an inputted movie is "similar" to it. 
 
 
- 
-### Tuesday Breakfast (8-9:30am)
-> Grits and Sausage Links in the main hall
+>As the backend developer, I have already created a team account in order to use their API. This database consists of millions of movies, including titles, overviews, ratings, and more. We are planning, as of this week, to get ready right away. We will be signing up for an API key, and from there, we will successfully be able to use the API key in order to make requests to the API to search for movies, retrieve movie data, and more. 
 
-### Tuesday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  Eat outside or at your housing, pick up trash and leave no mess in dinning hall or grounds.
+<img src="/images/apikey.png">
 
-### Tuesday Dinner - Head Chef Sherri (6-7pm)
+I, along with my scrum master and team, have already begun to develop code for fetching movie data. 
 
 
-### Wednesday Breakfast (8-9:30am)
+<img src="/images/fetchcode.png">
 
-### Wednesday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  Leave no mess please.  There is option to purchase food at the caverns, there is a picnic area at the site.
-
-
-### Wednesday Dinner - Head Chef Angela (6-7pm)
-
-
-### Thursday Breakfast (8-9:30am)
-
-### Thursday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  Leave no mess please.  There will likely be some down time and extra snacks will be wanted while boating.
-
-### Thursday Dinner - Head Chef Jared/Jeremiah (6-7pm)
-
-
-### Friday Breakfast (8-9:30am)
-
-### Friday Lunch
-> Make lunch in the dinning hall.  Pack and Go.  There are lots of places to explore and eat in the community of Shasta Lakes and Redding.
-
-### Friday Dinner - Head Chef John (6-7pm)
-
-
-### Saturday Breakfast (8-9:30am)
-
+> Although it is still a work in progress, this code, once we use our API key, should be able to request to the The Movie Database (TMDb) API using the movie provided by the user and display the results in the list. 
