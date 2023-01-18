@@ -12,3 +12,5 @@ This site serves to provide Team DESMO with a platform to discuss, brainstorm, a
 | Samit Poojary | Martin Nguyen | Derek Sol | Ethan Truong |
 | :--------: | :----------: | :-----------: | :-----------: |
 | Scrum Master | BackEnd Developer | FrontEnd Developer | DevOPS |
+
+
