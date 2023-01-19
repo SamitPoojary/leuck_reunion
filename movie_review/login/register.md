@@ -49,15 +49,7 @@
           border: none;
           transition-duration: 0.3s;
         }
-        button:hover {
-          color: #242424;
-          background-color: #f1cc0c;
-          width: 45%;
-          margin-left: 27.5%;
-          margin-right: 27.5%;
-          margin-bottom: 3%;
-          padding: 2.5%;
-        }
+        
         div.noacc {
           margin-top: 4%;
           margin-left: 25%;
