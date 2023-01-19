@@ -69,7 +69,7 @@
   </head>
   <body>
     <h1 class="header">
-      derek sol is a big black cock
+      Log in!
     </h1>
     <input type="username" class="login" id="user" placeholder="Username">
     <input type="password" class="login" id="pswd" placeholder="Password">
