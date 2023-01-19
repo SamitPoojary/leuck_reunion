@@ -1,7 +1,7 @@
 # BackEnd Dev
 <img src="{{site.baseurl}}/images/roughui.png">
 
-Our goal here is to develop a usable application that can effectively take in a user's favorite movie and generate similar movies. In addition to that, the application should ideally be able to store the user's most favorite movies (as operated by user). When evaluating what movies are the most suitable for the user, we will be taking into account the genre, main cast, and potentially even the producer. 
+Our team's goal here is to develop a usable application that can effectively take in a user's favorite movie and generate similar movies. In addition to that, the application should ideally be able to store the user's most favorite movies (as operated by user). When evaluating what movies are the most suitable for the user, we will be taking into account the genre, main cast, and potentially even the producer. 
 
 > As the backend developer, my job is to successfully implement the "The Movie Database" API so that the millions of movies from around the world are stored in a directory and can be called upon whenever an inputted movie is "similar" to it. 
 
