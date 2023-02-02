@@ -63,17 +63,15 @@ form.addEventListener('submit', event => {
   const quantity = document.getElementById('quantity').value;
 
   const newRow = document.createElement('tr');
-  newRow.style.border = '1px solid black';
   newRow.innerHTML = `
-    <td style="border: 1px solid black; padding: 8px;">${date}</td>
-    <td style="border: 1px solid black; padding: 8px;">${action}</td>
-    <td style="border: 1px solid black; padding: 8px;">${user}</td>
-    <td style="border: 1px solid black; padding: 8px;">${item}</td>
-    <td style="border: 1px solid black; padding: 8px;">${quantity}</td>
+    <td>${date}</td>
+    <td>${action}</td>
+    <td>${user}</td>
+    <td>${item}</td>
+    <td>${quantity}</td>
   `;
 
   table.appendChild(newRow);
-  form.style.display = 'none';
 });
 </script>
 
