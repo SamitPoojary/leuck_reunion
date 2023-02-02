@@ -46,24 +46,21 @@ form.innerHTML = `
 
 
 
-form.style.display = 'none';
-document.body.appendChild(form);
-
-addActivityBtn.addEventListener('click', event => {
-  event.preventDefault();
+addActivityBtn.addEventListener('click', function() {
   form.style.display = 'block';
 });
 
-form.addEventListener('submit', event => {
+form.addEventListener('submit', function(event) {
   event.preventDefault();
-  const date = document.getElementById('date').value;
-  const action = document.getElementById('action').value;
-  const user = document.getElementById('user').value;
-  const item = document.getElementById('item').value;
-  const quantity = document.getElementById('quantity').value;
 
-  const newRow = document.createElement('tr');
-  newRow.innerHTML = `
+  const date = form.querySelector('#date').value;
+  const action = form.querySelector('#action').value;
+  const user = form.querySelector('#user').value;
+  const item = form.querySelector('#item').value;
+  const quantity = form.querySelector('#quantity').value;
+
+  const row = document.createElement('tr');
+  row.innerHTML = `
     <td>${date}</td>
     <td>${action}</td>
     <td>${user}</td>
@@ -71,8 +68,12 @@ form.addEventListener('submit', event => {
     <td>${quantity}</td>
   `;
 
-  table.appendChild(newRow);
+  table.appendChild(row);
+
+  form.reset();
+  form.style.display = 'none';
 });
+With this code, when the user inputs data in the form and presses the "Add" button, a new row is added to the table with the entered data. The form is then reset and hidden.
 </script>
 
 
