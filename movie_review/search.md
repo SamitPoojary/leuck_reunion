@@ -11,7 +11,24 @@
     <th>Item</th>
     <th>Quantity</th>
   </tr>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
 </table>
+
 
 <script>
 const addActivityBtn = document.getElementById('add-activity-btn');
@@ -26,6 +43,8 @@ form.innerHTML = `
   <label>Quantity: <input type="text" id="quantity"></label>
   <button type="submit">Add</button>
 `;
+
+
 
 form.style.display = 'none';
 document.body.appendChild(form);
