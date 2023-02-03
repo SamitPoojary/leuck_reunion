@@ -44,49 +44,36 @@ form.innerHTML = `
   <button type="submit">Add</button>
 `;
 
-
-
-form.style.display = 'none';
-document.body.appendChild(form);
-
-addActivityBtn.addEventListener('click', event => {
-  event.preventDefault();
+addActivityBtn.addEventListener('click', () => {
   form.style.display = 'block';
 });
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
   const date = document.getElementById('date').value;
   const action = document.getElementById('action').value;
   const user = document.getElementById('user').value;
   const item = document.getElementById('item').value;
   const quantity = document.getElementById('quantity').value;
 
-  const row = document.createElement('tr');
-  const dateCell = document.createElement('td');
-  dateCell.textContent = date;
-  const actionCell = document.createElement('td');
-  actionCell.textContent = action;
-  const userCell = document.createElement('td');
-  userCell.textContent = user;
-  const itemCell = document.createElement('td');
-  itemCell.textContent = item;
-  const quantityCell = document.createElement('td');
-  quantityCell.textContent = quantity;
+  const newRow = table.insertRow();
+  const dateCell = newRow.insertCell(0);
+  const actionCell = newRow.insertCell(1);
+  const userCell = newRow.insertCell(2);
+  const itemCell = newRow.insertCell(3);
+  const quantityCell = newRow.insertCell(4);
 
-  row.appendChild(dateCell);
-  row.appendChild(actionCell);
-  row.appendChild(userCell);
-  row.appendChild(itemCell);
-  row.appendChild(quantityCell);
+  dateCell.innerHTML = date;
+  actionCell.innerHTML = action;
+  userCell.innerHTML = user;
+  itemCell.innerHTML = item;
+  quantityCell.innerHTML = quantity;
 
-  table.appendChild(row);
-});
-
-addActivityBtn.addEventListener('click', () => {
-  form.style.display = 'block';
+  form.reset();
 });
 </script>
+
 
 
 
