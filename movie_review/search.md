@@ -11,22 +11,6 @@
     <th>Item</th>
     <th>Quantity</th>
   </tr>
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
-
-  th {
-    background-color: #f2f2f2;
-  }
-</style>
 </table>
 
 
@@ -44,36 +28,35 @@ form.innerHTML = `
   <button type="submit">Add</button>
 `;
 
-addActivityBtn.addEventListener('click', () => {
+
+addActivityBtn.addEventListener('click', function() {
   form.style.display = 'block';
 });
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const date = document.getElementById('date').value;
-  const action = document.getElementById('action').value;
-  const user = document.getElementById('user').value;
-  const item = document.getElementById('item').value;
-  const quantity = document.getElementById('quantity').value;
+  const date = form.querySelector('#date').value;
+  const action = form.querySelector('#action').value;
+  const user = form.querySelector('#user').value;
+  const item = form.querySelector('#item').value;
+  const quantity = form.querySelector('#quantity').value;
 
-  const newRow = table.insertRow();
-  const dateCell = newRow.insertCell(0);
-  const actionCell = newRow.insertCell(1);
-  const userCell = newRow.insertCell(2);
-  const itemCell = newRow.insertCell(3);
-  const quantityCell = newRow.insertCell(4);
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td>${date}</td>
+    <td>${action}</td>
+    <td>${user}</td>
+    <td>${item}</td>
+    <td>${quantity}</td>
+  `;
 
-  dateCell.innerHTML = date;
-  actionCell.innerHTML = action;
-  userCell.innerHTML = user;
-  itemCell.innerHTML = item;
-  quantityCell.innerHTML = quantity;
+  table.appendChild(row);
 
   form.reset();
+  form.style.display = 'none';
 });
 </script>
-
 
 
 
