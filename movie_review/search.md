@@ -46,6 +46,14 @@ form.innerHTML = `
 
 
 
+form.style.display = 'none';
+document.body.appendChild(form);
+
+addActivityBtn.addEventListener('click', event => {
+  event.preventDefault();
+  form.style.display = 'block';
+});
+
 form.addEventListener('submit', (e) => {
   e.preventDefault();
   const date = document.getElementById('date').value;
