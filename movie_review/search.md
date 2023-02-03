@@ -1,7 +1,5 @@
 {% include review.html %}
 
-
-
 <button id="add-activity-btn">Add Activity</button>
 <table>
   <tr>
@@ -11,22 +9,7 @@
     <th>Item</th>
     <th>Quantity</th>
   </tr>
-<style>
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
-th {
-    background-color: #f2f2f2;
-  }
-</style>
 </table>
-
 
 <script>
 const addActivityBtn = document.getElementById('add-activity-btn');
@@ -40,31 +23,35 @@ form.innerHTML = `
   <label>Item: <input type="text" id="item"></label>
   <label>Quantity: <input type="text" id="quantity"></label>
   <button type="submit">Add</button>
-`;   and I want the inputted data to go into this table: <table>
-  <tr>
-    <th>Date</th>
-    <th>Action</th>
-    <th>User</th>
-    <th>Item</th>
-    <th>Quantity</th>
-  </tr>
-<style>
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
+`;
 
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
-  }
+form.style.display = 'none';
+document.body.appendChild(form);
 
-  th {
-    background-color: #f2f2f2;
-  }
-</style>
-</table>
+addActivityBtn.addEventListener('click', event => {
+  event.preventDefault();
+  form.style.display = 'block';
+});
 
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  const date = document.getElementById('date').value;
+  const action = document.getElementById('action').value;
+  const user = document.getElementById('user').value;
+  const item = document.getElementById('item').value;
+  const quantity = document.getElementById('quantity').value;
 
+  const newRow = document.createElement('tr');
+  newRow.innerHTML = `
+    <td>${date}</td>
+    <td>${action}</td>
+    <td>${user}</td>
+    <td>${item}</td>
+    <td>${quantity}</td>
+  `;
+
+  table.appendChild(newRow);
+  form.style.display = 'none';
+});
+</script>
 
