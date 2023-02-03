@@ -11,6 +11,20 @@
     <th>Item</th>
     <th>Quantity</th>
   </tr>
+<style>
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+th {
+    background-color: #f2f2f2;
+  }
+</style>
 </table>
 
 
@@ -26,37 +40,31 @@ form.innerHTML = `
   <label>Item: <input type="text" id="item"></label>
   <label>Quantity: <input type="text" id="quantity"></label>
   <button type="submit">Add</button>
-`;
+`;   and I want the inputted data to go into this table: <table>
+  <tr>
+    <th>Date</th>
+    <th>Action</th>
+    <th>User</th>
+    <th>Item</th>
+    <th>Quantity</th>
+  </tr>
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
 
-addActivityBtn.addEventListener('click', function() {
-  form.style.display = 'block';
-});
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-
-  const date = form.querySelector('#date').value;
-  const action = form.querySelector('#action').value;
-  const user = form.querySelector('#user').value;
-  const item = form.querySelector('#item').value;
-  const quantity = form.querySelector('#quantity').value;
-
-  const row = document.createElement('tr');
-  row.innerHTML = `
-    <td>${date}</td>
-    <td>${action}</td>
-    <td>${user}</td>
-    <td>${item}</td>
-    <td>${quantity}</td>
-  `;
-
-  table.appendChild(row);
-
-  form.reset();
-  form.style.display = 'none';
-});
-</script>
+  th {
+    background-color: #f2f2f2;
+  }
+</style>
+</table>
 
 
 
