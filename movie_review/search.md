@@ -46,33 +46,37 @@ form.innerHTML = `
 
 
 
-form.style.display = 'none';
-document.body.appendChild(form);
-
-addActivityBtn.addEventListener('click', event => {
-  event.preventDefault();
-  form.style.display = 'block';
-});
-
-form.addEventListener('submit', event => {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
   const date = document.getElementById('date').value;
   const action = document.getElementById('action').value;
   const user = document.getElementById('user').value;
   const item = document.getElementById('item').value;
   const quantity = document.getElementById('quantity').value;
 
-  const newRow = document.createElement('tr');
-  newRow.innerHTML = `
-    <td>${date}</td>
-    <td>${action}</td>
-    <td>${user}</td>
-    <td>${item}</td>
-    <td>${quantity}</td>
-  `;
+  const row = document.createElement('tr');
+  const dateCell = document.createElement('td');
+  dateCell.textContent = date;
+  const actionCell = document.createElement('td');
+  actionCell.textContent = action;
+  const userCell = document.createElement('td');
+  userCell.textContent = user;
+  const itemCell = document.createElement('td');
+  itemCell.textContent = item;
+  const quantityCell = document.createElement('td');
+  quantityCell.textContent = quantity;
 
-  table.appendChild(newRow);
-  form.style.display = 'none';
+  row.appendChild(dateCell);
+  row.appendChild(actionCell);
+  row.appendChild(userCell);
+  row.appendChild(itemCell);
+  row.appendChild(quantityCell);
+
+  table.appendChild(row);
+});
+
+addActivityBtn.addEventListener('click', () => {
+  form.style.display = 'block';
 });
 </script>
 
