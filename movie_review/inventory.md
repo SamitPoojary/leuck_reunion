@@ -22,6 +22,60 @@
     <input type="text" id="quantity" name="quantity">
   </div>
   <button type="submit" id="add-activity-btn">Add Activity</button>
+
+<style>
+  #inventory-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  #inventory-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  #add-activity-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  #inventory-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #inventory-table th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+
+  #inventory-table th {
+    background-color: lightgray;
+  }
+</style>
+
 </form>
 
 <table id="inventory-table">
